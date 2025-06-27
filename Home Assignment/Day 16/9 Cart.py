@@ -23,7 +23,7 @@ class Cart:
             print(f"Item '{name}' not found in cart.")
 
     def get_total(self):
-        print(sum(self.items.values()))
+        return sum(self.items.values())
 
     def display(self):
         print("\n---- Shopping Cart ----")
@@ -33,7 +33,6 @@ class Cart:
 
 # Create a cart object
 c = Cart()
-
 c.add_item("Apple", 1.00)
 c.add_item("Banana", 0.50)
 c.add_item("Orange", 1.50)
